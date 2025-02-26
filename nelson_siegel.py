@@ -74,7 +74,7 @@ class nsc:
             self.ns_curve_df.loc[date] = self._ns_function(params[:4], curve_maturities)
         return self.ns_curve_df
 
-def plot_ns_histo(ns_data, show=True):
+def nsc_histo(ns_data, show=True):
     """
     Plot the historical evolution of Nelson-Siegel parameters with a 5-week moving average.
 
@@ -138,7 +138,7 @@ def plot_ns_histo(ns_data, show=True):
         plt.close()
         return ns_histo_file
 
-def plot_ns_comps(yields, mat_yields, ns, mat_ns, ns_param, show=True):
+def nsc_comps(yields, mat_yields, ns, mat_ns, ns_param, show=True):
     """
     Plot observed bond yields and the Nelson-Siegel model curve.
 
