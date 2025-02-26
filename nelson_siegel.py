@@ -33,7 +33,7 @@ class NelsonSiegelFitter:
         """Fonction objectif pour minimiser l'erreur entre la courbe ajustée et les rendements observés."""
         return np.sum((Y - self._ns_function(P, T)) ** 2)
 
-    def fit_parameters(self, yields):
+    def fit(self, yields):
         """
         Ajuste la courbe de Nelson-Siegel sur une série temporelle de rendements obligataires.
 
