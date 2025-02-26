@@ -5,7 +5,7 @@ from tqdm import tqdm
 import tempfile
 import matplotlib.pyplot as plt
 
-class NelsonSiegelFitter:
+class nsc:
     def __init__(self, maturities, bounds=[(0, 1), (-1, 1), (-1, 1), (0, 2)], x0=[0.01, 0.01, 0.01, 0.5], method='Nelder-Mead'):
         """
         Initialise un estimateur de Nelson-Siegel.
